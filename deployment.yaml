@@ -16,10 +16,14 @@ spec:
     spec:
       containers:
       - name: note-sample-app-container
-        image: pavansa/note-sample-app
+        image: localhost:5001/note-sample-app:1
         resources:
           requests:
+            cpu: "50m"
+            memory: "50Mi"
+          limits:
             cpu: "100m"
+            memory: "100Mi"
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
