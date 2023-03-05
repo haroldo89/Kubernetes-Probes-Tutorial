@@ -15,5 +15,3 @@ kubectl apply -f deployment.yaml
 
 # get all objects inside the cluster in the target namespace
 kubectl get all
-
-
